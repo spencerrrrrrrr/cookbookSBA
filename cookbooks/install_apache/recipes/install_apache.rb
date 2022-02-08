@@ -29,7 +29,7 @@ end
 # Copy apache template
 
 template '/var/www/html/index.html' do
-  source 'index.html.erb'
+  source 'install_apache.erb'
   mode '0644'
   case node['platform']
   when 'redhat', 'centos', 'fedora', 'scientific'
